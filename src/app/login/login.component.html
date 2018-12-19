@@ -1,0 +1,14 @@
+
+     <form (submit)="onLoginSubmit()">
+       <h1>Login</h1>
+                    <div >
+                      <label>User ID </label>
+                      <input type="text" value="" placeholder="Enter valid user Id" name="username" (keyup)="onEntry(loginname.value)" #loginame> 
+                    </div>
+                    <div >
+                      <label>Password </label>
+                      <input type="password"  name="password">
+                    </div>
+                    <input type="submit"  value="Login" (click)="moveToUserhome()">
+                  </form>
+                  
