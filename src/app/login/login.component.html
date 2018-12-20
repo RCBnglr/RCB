@@ -1,14 +1,21 @@
+<div class="row" style="margin-top:200px; padding:20px; background-color:#ede9f5;border-radius:15px;
+-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);">
+  <div class="col-sm-12" style="text-align:center;">
+    <h1>LOGIN</h1></div>
 
-     <form (submit)="onLoginSubmit()">
-       <h1>Login</h1>
-                    <div >
-                      <label>User ID </label>
-                      <input type="text" value="" placeholder="Enter valid user Id" name="username" (keyup)="onEntry(loginname.value)" #loginame> 
-                    </div>
-                    <div >
-                      <label>Password </label>
-                      <input type="password"  name="password">
-                    </div>
-                    <input type="submit"  value="Login" (click)="moveToUserhome()">
-                  </form>
-                  
+<form [formGroup]="loginForm" (submit)="onLoginSubmit()" style="text-align:center; margin-top:40px; margin-left:150px; padding:20px;" >
+ 
+               <div >
+                 <label>Email ID:</label>
+                 <input formControlName="email" type="email" value="" style=" margin-left:15px;" placeholder="abc@siemens.com" name="username" (keyup)="onEntry(loginname.value)" #loginame> 
+               </div>
+               <div >
+                 <br>
+                 <label>Password </label>
+                 <input formControlName="password" type="password" style=" margin-left:15px;" name="password">
+               </div>
+               <input type="submit"   style=" margin-top:15px;" value="Login" (click)="check()" >
+             </form>
+             
