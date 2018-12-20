@@ -26,9 +26,12 @@ export class LoginComponent implements OnInit {
   {
     if(!this.loginForm.valid) {
       alert("Invalid");
-      return; 
+      //return; 
     }
-    else this.moveToUserhome();
+    else {
+      this.moveToUserhome();
+      console.log(JSON.stringify(this.loginForm.value));
   }
+}
   
 }
