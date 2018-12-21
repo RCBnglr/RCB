@@ -1,11 +1,41 @@
-<div class="row" style="margin-top:200px; padding:20px; background-color:#ede9f5;border-radius:15px;
+<!-- <div  class="row" style="margin-top:50px; padding:20px;  background-color:#ede9f5;border-radius:15px;
 -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
 -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);">
-  <div class="col-sm-12" style="text-align:center;">
-    <h1>LOGIN</h1></div>
+box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);"> -->
 
-<form [formGroup]="loginForm" (submit)="onLoginSubmit()" style="text-align:center; margin-top:40px; margin-left:150px; padding:20px;" >
+
+<div class="container">
+<div class="row">
+<div class="col-10" style="text-align:center;">
+<div class="jumbotron"> 
+ <h1>LOGIN</h1>     
+<form   [formGroup]="loginForm" (ngSubmit)="loginForm.valid && check()">
+  <div>
+    <label>Email ID:</label>
+    <input type="email" class="form-control" formControlName="email" placeholder="abc@siemens,com" 
+    [ngClass]="{'is-invalid': loginForm.get('email').touched && loginForm.get('email').invalid}" >
+    <div *ngIf="loginForm.get('email').touched && loginForm.get('email').invalid" class="invalid-feedback">
+      <div *ngIf="loginForm.get('email').errors.required" >Email ID is required</div>
+      <div *ngIf="loginForm.get('email').errors.email" >Email must be a valid email Address</div>
+    </div>
+  </div>
+  <div><br>
+    <label>Password </label>
+    <input type="password" class="form-control"  formControlName="password" [ngClass]="{'is-invalid': loginForm.get('password').touched && loginForm.get('password').invalid}" >
+    <div *ngIf="loginForm.get('password').touched && loginForm.get('password').invalid" class="invalid-feedback">
+      <div *ngIf="loginForm.get('password').errors.required">password is required</div>
+      <div *ngIf="loginForm.get('password').errors.minlength">Password must be atleast 6 character</div>
+      </div>  
+  </div>
+  <input type="submit" class="btn btn-primary btn-lg"  style=" margin-top:15px;" [disabled]="!loginForm.valid" >
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<!--
+<form [formGroup]="loginForm" (submit)="onLoginSubmit()"  style="text-align:center;  margin-top:40px; margin-left:150px; padding:20px;" >
  <div >
   <label>Email ID:</label>
   <input formControlName="email" type="email" value="" style=" margin-left:15px;" placeholder="abc@siemens.com" name="username" (keyup)="onEntry(loginname.value)" #loginame> 
@@ -14,6 +44,6 @@ box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);">
   <label>Password </label>
   <input formControlName="password" type="password" style=" margin-left:15px;" name="password">
  </div>
-   <input type="submit" class="btn btn-primary btn-lg"  style=" margin-top:15px;" value="Login" (click)="check()" >
-</form>
-             
+   <input type="submit" class="btn btn-primary btn-lg"  style=" margin-top:15px;" value="Login" (click)="check()"
+   [disabled]="loginForm.invalid" >
+</form> -->

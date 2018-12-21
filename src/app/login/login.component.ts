@@ -1,7 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import{FormGroup, FormControl, Validators} from '@angular/forms';
+import{FormGroup, FormControl, Validators, FormBuilder} from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -10,13 +10,22 @@ import{FormGroup, FormControl, Validators} from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
+// form= new FormGroup({
+//   email: new FormControl('',[Validators.email, Validators.required]),
+//   password: new FormGroup(null , Validators.required)
+// })
+
   loginForm:FormGroup=new FormGroup({
       email:new FormControl(null, [Validators.email, Validators.required]),
-      password:new FormControl(null, [Validators.required])
+      password:new FormControl(null, [Validators.required,Validators.minLength(6)])
   })
-  constructor(private _router:Router) { }
-
+  constructor(private _router:Router, private _fb:FormBuilder) { }
+  loginForm1:FormGroup;
   ngOnInit() {
+    // this.loginForm1=this._fb.group({
+    //   email:[],
+    //   password:[]
+    // })
   }
 
   moveToUserhome(){
@@ -24,14 +33,11 @@ export class LoginComponent implements OnInit {
   }
   check()
   {
-    if(!this.loginForm.valid) {
-      alert("Invalid");
-      //return; 
-    }
-    else {
-      this.moveToUserhome();
-      console.log(JSON.stringify(this.loginForm.value));
+    // if(!this.loginForm.valid) {}
+    // else {
+    //   this.moveToUserhome();
+    //   console.log(JSON.stringify(this.loginForm.value));}
+    this.moveToUserhome();
   }
-}
   
 }
