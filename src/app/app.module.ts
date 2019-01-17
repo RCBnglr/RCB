@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,18 +8,26 @@ import { LoginComponent } from './login/login.component';
 import { UserhomeComponent } from './userhome/userhome.component';
 import{FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {UserService} from './user.service';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    UserhomeComponent
+    UserhomeComponent,
+    PieChartComponent,
+    LineChartComponent,
+    BarChartComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
