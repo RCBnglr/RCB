@@ -1,31 +1,76 @@
 {
-  "people": [
-    {
-      "name":"Brad",
-      "age": 35
-    },
-    {
-      "name":"John",
-      "age":40
-    },
-    {
-      "name":"Sara",
-      "age":25
-    },
-    {
-      "name":"Jeff",
-      "age":20
-    }
-  ],
-
-  "total_test_cases":[512,512,512,524,524,508,510,511,508,509,508,507,78],
-
-  "test_cases_executed":[87,154,182,180,178,180,182,183,180,181,180,12,78],
-
-  "Tests_outplanned":[425,154,182,344,178,328,328,328,328,328,328,495,0],
-
-  "passed":[87,154,182,180,178,180,182,183,180,181,180,12,78],
-
-  "Total_UT_defects_found":[1,3,0,3,0,2,3,2,1,2,2,0,5]
-
+  "testData": [
+      {
+          "build":"V02.40.17_SDE_GLOBAL",
+          "Total_Test_Cases":"508",
+          "Test_cases_executed":"180",
+          "Tests_outplanned":"328",
+          "Failed":"0",
+          "passed":"180",
+          "Total_UT_defects_found":"2"
+      },
+      {
+          "build":"V02.40.18_SDE_GLOBAL",
+          "Total_Test_Cases":"510",
+          "Test_cases_executed":"182",
+          "Tests_outplanned":"328",
+          "Failed":"0",
+          "passed":"182",
+          "Total_UT_defects_found":"3"
+      },
+      {
+          "build":"V02.40.18_SDE_1__GLOBAL",
+          "Total_Test_Cases":"511",
+          "Test_cases_executed":"183",
+          "Tests_outplanned":"328",
+          "Failed":"0",
+          "passed":"183",
+          "Total_UT_defects_found":"2"
+      },
+      {
+          "build":"V02.40.19_SDE_GLOBAL",
+          "Total_Test_Cases":"508",
+          "Test_cases_executed":"180",
+          "Tests_outplanned":"328",
+          "Failed":"0",
+          "passed":"180",
+          "Total_UT_defects_found":"1"
+      },
+      {
+          "build":"V02.40.20_SDE_GLOBA",
+          "Total_Test_Cases":"509",
+          "Test_cases_executed":"181",
+          "Tests_outplanned":"328",
+          "Failed":"0",
+          "passed":"181",
+          "Total_UT_defects_found":"2"
+      },
+      {
+          "build":"V02.40.21_SDE_GLOBAL",
+          "Total_Test_Cases":"508",
+          "Test_cases_executed":"180",
+          "Tests_outplanned":"328",
+          "Failed":"0",
+          "passed":"180",
+          "Total_UT_defects_found":"2"
+      },
+      {
+          "build":"V02.40.22_CMP_GLOBAL",
+          "Total_Test_Cases":"507",
+          "Test_cases_executed":"12",
+          "Tests_outplanned":"495",
+          "Failed":"0",
+          "passed":"12",
+          "Total_UT_defects_found":"0"
+      },
+      {
+          "build":"V02.40.23_SDE_GLOBAL",
+          "Total_Test_Cases":"78",
+          "Test_cases_executed":"78",
+          "Tests_outplanned":"0",
+          "Failed":"0",
+          "passed":"78",
+          "Total_UT_defects_found":"5"
+      }
+  ]
 }
