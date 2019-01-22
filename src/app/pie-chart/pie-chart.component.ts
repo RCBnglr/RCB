@@ -12,33 +12,39 @@ export class PieChartComponent implements OnInit {
 
   ngOnInit() {
     this.PieChart=new Chart('pieChart', {
-      type: 'pie',
+      type: 'doughnut',
       data: {
-        labels: ["Jan",  "Feb" , "mar",  "Aprl", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        //labels: ["Jan",  "Feb" , "mar",  "Aprl", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"],
         datasets:[{
           label: 'sample data',
           
-          data: [12,1,3,4,15,12,9,4,3,5,8,11],
-          fill:false,
+          data: [12,1,4,15,8,11],
+          fill:true,
           lineTension:0.2,
-          borderColor:"red",
-          borderWidth:1
+          backgroundColor:["green","green","green","yellow","yellow","red"],
+         // borderColor:"red",
+          borderWidth:0
         },]
       },
 
       options:{
-        title:{
-          text:"Pie Chart",
-          display:true
-        },
-        scales: {
+
+        rotation: 1 * Math.PI,
+      circumference: 1 * Math.PI,
+      cutoutPercentage:50,
+        // showLines: false,
+        // title:{
+        //   text:"Pie Chart",
+        //   display:false
+        // },
+        // scales: {
           
-          yAxes:[{
-            ticks:{
-              beginAtZero:true
-            }
-          }]
-        }
+        //   yAxes:[{
+        //     ticks:{
+        //       beginAtZero:true
+        //     }
+        //   }]
+        // }
       }
     })
   }
