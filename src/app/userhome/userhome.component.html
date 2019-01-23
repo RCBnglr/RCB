@@ -73,75 +73,17 @@
         
     </div>
 
-    <div class="grid">
-        <a href="#" style="float:right" class="next">Next &#8250;</a>
-        <a href="#"  style="float:right"class="previous">&#8249; Previous</a>
-      <div class="row" style="margin-top:30px;">
-        <div class="column">
-          <h2>Project 1</h2>
-          <p><b>Status: Ongoing</b></p>
-          <p>Duration: 1 month</p>
-          <p>Department: Reuse</p>
-          <div>
-              <app-pie-chart></app-pie-chart>
+    <mat-paginator [length]="100" 
+      [pageSize]="10"
+      [pageSizeOptions]="[5, 10, 25, 100]">
+      </mat-paginator>  
 
-            
-          </div>
-        </div>
-        <div class="column">
-          <h2>Project 2</h2>
-          <p><b>Status: Completed</b></p>
-          <p>Duration: 6 months</p>
-          <p>Department: Reuse</p>
-        </div>
-        <div class="column">
-          <h2>Project 3</h2>
-          <p><b>Status: Ongoing</b></p>
-          <p>Duration: 5 months</p>
-          <p>Department: Reuse</p>
-        </div>
-      </div>
-      <div class="row">
-          <div class="column">
-            <h2>Project 4</h2>
-            <p><b>Status: Completed</b></p>
-            <p>Duration: 4 months</p>
-            <p>Department: Reuse</p>
-          </div>
-          <div class="column">
-            <h2>Project 5</h2>
-            <p><b>Status: Deadlock</b></p>
-            <p>Duration: 6 months</p>
-            <p>Department: Reuse</p>
-          </div>
-          <div class="column">
-            <h2>Project 6</h2>
-            <p><b>Status: Completed</b></p>
-            <p>Duration: 10 months</p>
-            <p>Department: Reuse</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <h2>Project 7</h2>
-            <p><b>Status: Ongoing</b></p>
-            <p>Duration: 7 months</p>
-            <p>Department: Reuse</p>
-          </div>
-          <div class="column">
-            <h2>Project 8</h2>
-            <p><b>Status: Deadlock</b></p>
-            <p>Duration: 6 months</p>
-            <p>Department: Reuse</p>
-          </div>
-          <div class="column">
-            <h2>Project 9</h2>
-            <p><b>Status: Completed</b></p>
-            <p>Duration: 9 months</p>
-            <p>Department: Reuse</p>
-          </div>
-        </div> 
-      </div>
+      <mat-grid-list cols="3" rowHeight="4:3" > 
+        <mat-grid-tile *ngFor="let port of portfolio" style="font-style: bold">
+          <mat-grid-tile-header>{{port.name}}</mat-grid-tile-header>
+          {{port.status}}
+        </mat-grid-tile>
+      </mat-grid-list> 
     
       <div class="footer">
         <p>Code.Siemens.com</p>
