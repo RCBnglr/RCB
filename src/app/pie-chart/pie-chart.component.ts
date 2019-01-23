@@ -14,7 +14,7 @@ export class PieChartComponent implements OnInit {
     this.PieChart=new Chart('pieChart', {
       type: 'doughnut',
       data: {
-        //labels: ["Jan",  "Feb" , "mar",  "Aprl", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        labels: ["takt1",  "takt2" , "takt3",  "takt4", "takt5", "takt6"],
         datasets:[{
           label: 'sample data',
           
@@ -29,9 +29,13 @@ export class PieChartComponent implements OnInit {
 
       options:{
 
-        rotation: 1 * Math.PI,
-      circumference: 1 * Math.PI,
-      cutoutPercentage:50,
+        legend: {
+          display: false,
+        },
+
+        rotation: .75 * Math.PI,
+      circumference: 1.5 * Math.PI,
+      cutoutPercentage:65,
         // showLines: false,
         // title:{
         //   text:"Pie Chart",

@@ -84,4 +84,11 @@ export class UserhomeComponent implements OnInit {
   // moveToLogin(){
   //   this._router.navigate(['/login']);
   // }
+  public portfolio=[
+    {name:'Project 1', status:'ongoing'},         
+    {name:'Project 2', status:'ongoing'},
+    {name:'Project 3', status:'ongoing'},
+    {name:'Project 4', status:'ongoing'},
+    {name:'Project 5', status:'ongoing'},
+    {name:'Project 6', status:'Completed'}];
 } 

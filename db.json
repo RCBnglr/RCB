@@ -72,5 +72,91 @@
           "passed":"78",
           "Total_UT_defects_found":"5"
       }
+  ],
+  "projectDetails":[
+    {
+      "name":"project1",
+      "status":"ongoing",
+      "duration":"1 month",
+      "department":"Reuse"
+    },
+    {
+      "name":"project2",
+      "status":"Completed",
+      "duration":"5 month",
+      "department":"Reuse"
+    },
+    {
+      "name":"project3",
+      "status":"ongoing",
+      "duration":"8 month",
+      "department":"Reuse"
+    },
+    {
+      "name":"project4",
+      "status":"Completed",
+      "duration":"9 month",
+      "department":"Reuse"
+    },
+    {
+      "name":"project5",
+      "status":"ongoing",
+      "duration":"14 month",
+      "department":"Reuse"
+    },
+    {
+      "name":"project6",
+      "status":"ongoing",
+      "duration":"10 month",
+      "department":"Reuse"
+    },
+    {
+      "name":"project7",
+      "status":"ongoing",
+      "duration":"7 month",
+      "department":"Reuse"
+    },
+    {
+      "name":"project8",
+      "status":"Completed",
+      "duration":"5 month",
+      "department":"Reuse"
+    },
+    {
+      "name":"project9",
+      "status":"ongoing",
+      "duration":"4 month",
+      "department":"Reuse"
+    },
+    {
+      "name":"project10",
+      "status":"ongoing",
+      "duration":"9 month",
+      "department":"Reuse"
+    },
+    {
+      "name":"project11",
+      "status":"ongoing",
+      "duration":"6 month",
+      "department":"Reuse"
+    },
+    {
+      "name":"project12",
+      "status":"Completed",
+      "duration":"1 month",
+      "department":"Reuse"
+    },
+    {
+      "name":"project13",
+      "status":"ongoing",
+      "duration":"3 month",
+      "department":"Reuse"
+    },
+    {
+      "name":"project14",
+      "status":"ongoing",
+      "duration":"16 month",
+      "department":"Reuse"
+    }
   ]
 }
