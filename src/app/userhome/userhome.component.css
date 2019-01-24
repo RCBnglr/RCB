@@ -295,13 +295,17 @@
   .gridText{
     position: absolute;
     left: 15px;
-    top:55px; 
+    top:60px; 
   }
   .gridChart{
-    position:fixed; 
-    right:15px;
-    background-color:pink; 
+    position: absolute;
+    right: 15px;
+    top:60px; 
+    background-color:rgb(252, 240, 242); 
+    height:240px;
+    width:250px;
   }
+  
 mat-grid-list{
     max-width: 98%; 
     margin:auto;
