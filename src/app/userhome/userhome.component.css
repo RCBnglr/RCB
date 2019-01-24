@@ -43,7 +43,7 @@
   .topnav2{
     padding: 10px;
     overflow: hidden;
-    background-color:rgb(104, 1, 104);
+    background-color:rgba(1, 18, 65, 0.945);
   }
   .topnav2 a {
     float: left;
@@ -54,7 +54,7 @@
     text-decoration: none;
   }
   .topnav2 a:hover {
-    background-color:	purple;
+    background-color:	rgba(29, 55, 126, 0.959);
   }
   
   
@@ -103,12 +103,12 @@
     margin: 0;
   }
   .dropdown:hover .dropbtn {
-    background-color: 	purple;
+    background-color: 		rgba(29, 55, 126, 0.959);
   }
     .dropdown-content {
     display: none;
     position: absolute;
-    background-color:rgb(104, 1, 104);
+    background-color:rgba(1, 18, 65, 0.945);
     min-width: 180px;
      }
     .dropdown-content a {
@@ -147,26 +147,26 @@
     text-decoration: none;
   }
   .active {
-    background-color:rgb(104, 1, 104);
+    background-color:rgba(1, 18, 65, 0.945);
    } 
   .active:hover{
-    background-color:	purple;
+    background-color:		rgba(29, 55, 126, 0.959);
   }
   .previous {
-    background-color: rgb(104, 1, 104);
+    background-color: rgba(1, 18, 65, 0.945);
     color: white;
     margin-right:5px;
     width: 105px;
   }
    
   .next {
-    background-color:rgb(104, 1, 104);
+    background-color:rgba(1, 18, 65, 0.945);
     color: white;
     width: 105px;
   }
   
   .topnav3 a:hover {
-  background-color:	purple;
+  background-color:		rgba(29, 55, 126, 0.959);
   } 
   
   /*FILTER DROPDOWN*/
@@ -289,16 +289,21 @@
   
   /*GRID SYSTEM*/
   mat-grid-tile {
-    background-color:lightgrey;
-    text-align:left;
-    border-radius: 15px;
-    /* margin:50px; */
-    
-}
+    background-color:	rgba(196, 203, 223, 0.959);
+     border-radius: 15px;
+  }
+  .gridText{
+    position: absolute;
+    left: 15px;
+    top:55px; 
+  }
 mat-grid-list{
     max-width: 98%; 
     margin:auto;
     margin-top:5px;
+}
+mat-grid-tile-header{
+  text-align:center;
 }
   
     .footer {

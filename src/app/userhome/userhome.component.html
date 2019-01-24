@@ -81,7 +81,7 @@
       <mat-grid-list cols="3" rowHeight="4:3" > 
         <mat-grid-tile *ngFor="let port of portfolio" style="font-style: bold">
           <mat-grid-tile-header>{{port.name}}</mat-grid-tile-header>
-          {{port.status}}
+          <div class="gridText">{{port.status}}</div>
         </mat-grid-tile>
       </mat-grid-list> 
     
