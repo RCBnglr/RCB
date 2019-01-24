@@ -85,23 +85,23 @@ export class UserhomeComponent implements OnInit {
   //   this._router.navigate(['/login']);
   // }
   public portfolio=[
-    {name:'Project 1', status:'Status: Ongoing'},         
-    {name:'Project 2', status:'Status: Completed'},
-    {name:'Project 3', status:'Status: Ongoing'},
-    {name:'Project 4', status:'Status: Ongoing'},
-    {name:'Project 5', status:'Status: Ongoing'},
-    {name:'Project 6', status:'Status: Completed'},
-    {name:'Project 7', status:'Status: Ongoing'},         
-    {name:'Project 8', status:'Status: Completedg'},
-    {name:'Project 9', status:'Status: Completed'},
-    {name:'Project 10', status:'Status: Completed'},
-    {name:'Project 11', status:'Status: Completed'},
-    {name:'Project 12', status:'Status: Completed'},
-    {name:'Project 13', status:'Status: Completed'},         
-    {name:'Project 14', status:'Status: Ongoing'},
-    {name:'Project 15', status:'Status: Completed'},
-    {name:'Project 16', status:'Status: Completed'},
-    {name:'Project 17', status:'Status: Ongoing'},
-    {name:'Project 18', status:'Status: Completed'}];
+    {name:'Project 1', status:' Ongoing', location:'', duration:''},         
+    {name:'Project 2', status:'Completed'},
+    {name:'Project 3', status:'Ongoing'},
+    {name:'Project 4', status:'Ongoing'},
+    {name:'Project 5', status:'Ongoing'},
+    {name:'Project 6', status:'Completed'},
+    {name:'Project 7', status:'Ongoing'},         
+    {name:'Project 8', status:'Completed'},
+    {name:'Project 9', status:' Completed'},
+    {name:'Project 10', status:'Completed'},
+    {name:'Project 11', status:'Completed'},
+    {name:'Project 12', status:'Completed'},
+    {name:'Project 13', status:'Completed'},         
+    {name:'Project 14', status:'Ongoing'},
+    {name:'Project 15', status:'Completed'},
+    {name:'Project 16', status:'Completed'},
+    {name:'Project 17', status:'Ongoing'},
+    {name:'Project 18', status:'Completed'}];
 }
 

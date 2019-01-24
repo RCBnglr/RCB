@@ -297,6 +297,11 @@
     left: 15px;
     top:55px; 
   }
+  .gridChart{
+    position:fixed; 
+    right:15px;
+    background-color:pink; 
+  }
 mat-grid-list{
     max-width: 98%; 
     margin:auto;
