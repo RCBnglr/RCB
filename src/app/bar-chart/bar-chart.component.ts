@@ -3,7 +3,7 @@ import {Chart} from 'chart.js';
 import {HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import { UserService } from '../user.service';
 import 'rxjs/add/operator/map';
-import {Data} from '../data'
+import {Data} from '../data';
 
 //https://appdividend.com/2018/09/12/angular-charts-example-tutorial/
 
