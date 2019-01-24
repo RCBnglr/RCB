@@ -1,32 +1,4 @@
 
-
-<!-- <div class="container">
-  <ul class="nav nav-tabs">
-
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/bar-chart">Bar Chart</a>
-    </li>
-
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/line-chart">Line Chart</a>
-    </li>
-
-    <li class="nav-item">
-       <a class="nav-link" routerLink="/pie-chart">Pie Chart</a>
-    </li>
-    <li class="nav-item">
-      <a 
-     class="nav-link" routerLink="/directive">directives</a>
-    </li>
-
-  </ul>
-  <div>
-
-    <router-outlet></router-outlet>
-  </div>
-</div> -->
-
-
  <div class="topnav1">
     <a>Hello Allen!</a>
     <a class="active" style="float:right">Code.Siemens.com</a>
@@ -80,6 +52,7 @@
         <mat-grid-tile *ngFor="let port of res" style="font-style: bold">
           <mat-grid-tile-header>{{port.name}}</mat-grid-tile-header>
           <div class="gridText">Status:{{port.status}}<br>Duration:{{port.duration}}<br>Department:{{port.department}}</div>
+          <div><app-pie-chart></app-pie-chart></div>
         </mat-grid-tile>
       </mat-grid-list> 
     

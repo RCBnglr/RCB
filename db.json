@@ -157,6 +157,12 @@
       "status":"ongoing",
       "duration":"16 month",
       "department":"Reuse"
+    },
+    {
+      "name":"project15",
+      "status":"completed",
+      "duration":"6 month",
+      "department":"Reuse"
     }
   ]
 }
