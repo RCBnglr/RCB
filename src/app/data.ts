@@ -6,4 +6,6 @@ export interface Data{
     Failed:Number;
     passed:Number;
     Total_UT_defects_found:Number;
+    name:String;
+    status:String;
 }

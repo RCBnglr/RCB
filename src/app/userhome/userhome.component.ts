@@ -27,6 +27,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import {Data} from '../data'
 
 @Component({
   selector: 'app-userhome',
@@ -35,9 +37,20 @@ import { Router } from '@angular/router';
 })
 export class UserhomeComponent implements OnInit {
 
-  constructor(private _router:Router) { }
+  url='http://localhost:3000/projectDetails';
+  status=[];
+  name=[];
+  //portfolio=[];
+  res:any;
+
+  constructor(private _router:Router,private http:HttpClient) { }
 
   ngOnInit() {
+    this.http.get(this.url).subscribe((res)=>{
+     this.res=res;
+    }
+    );
+
   }
   // filterSelection(all:any)
   //     filterSelection(c) {
@@ -84,24 +97,6 @@ export class UserhomeComponent implements OnInit {
   // moveToLogin(){
   //   this._router.navigate(['/login']);
   // }
-  public portfolio=[
-    {name:'Project 1', status:' Ongoing', location:'', duration:''},         
-    {name:'Project 2', status:'Completed'},
-    {name:'Project 3', status:'Ongoing'},
-    {name:'Project 4', status:'Ongoing'},
-    {name:'Project 5', status:'Ongoing'},
-    {name:'Project 6', status:'Completed'},
-    {name:'Project 7', status:'Ongoing'},         
-    {name:'Project 8', status:'Completed'},
-    {name:'Project 9', status:' Completed'},
-    {name:'Project 10', status:'Completed'},
-    {name:'Project 11', status:'Completed'},
-    {name:'Project 12', status:'Completed'},
-    {name:'Project 13', status:'Completed'},         
-    {name:'Project 14', status:'Ongoing'},
-    {name:'Project 15', status:'Completed'},
-    {name:'Project 16', status:'Completed'},
-    {name:'Project 17', status:'Ongoing'},
-    {name:'Project 18', status:'Completed'}];
+ 
 }
 
