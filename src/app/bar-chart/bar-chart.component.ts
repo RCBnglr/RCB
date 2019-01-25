@@ -46,7 +46,7 @@ export class BarChartComponent implements OnInit {
           data:this.Total_Test_Cases,
           label: 'Total Test Cases',
 
-          //data: [512,312,612,524,124,208,510,511,508,509,508,507,78],
+
            
           backgroundColor:"red",
           borderWidth:1

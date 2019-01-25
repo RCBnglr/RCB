@@ -1,81 +1,36 @@
-
-
-<!-- <div class="row" >
-<div class="col-12" style="text-align:center;">
-
- <h1>LOGIN</h1>     
-<form  #frm="ngForm" (ngSubmit)="login(frm)">
-  <div class="form-group">
-    <label for="email">Email ID:</label>
-    <input type="email" class="form-control" ngModel name="email" formControlName="email" placeholder="abc@siemens.com" >
-    <div *ngIf="loginForm.get('email').touched && loginForm.get('email').invalid" class="invalid-feedback">
-      <div *ngIf="loginForm.get('email').errors.required" >Email ID is required</div>
-      <div *ngIf="loginForm.get('email').errors.email" >Email must be a valid email Address</div>
-    </div>
-  </div>
-  <div class="form-group"><br>
-    <label for="password">Password </label>
-    <input type="password" class="form-control" ngModel name="password" formControlName="password" >
-    <div *ngIf="loginForm.get('password').touched && loginForm.get('password').invalid" class="invalid-feedback">
-      <div *ngIf="loginForm.get('password').errors.required">password is required</div>
-      <div *ngIf="loginForm.get('password').errors.minlength">Password must be atleast 6 character</div>
-      </div>  
-  </div>
-  <input type="submit" class="btn btn-primary btn-lg"  style=" margin-top:15px;" [disabled]="!loginForm.valid" >
-</form>
-</div>
-</div>
-
- -->
-
-<!-- <div class="container">
-  <div class="jumbotron"> -->
 <div class="container">
-      <nav  class="navbar navbar-expand-lg navbar-light bg-light" >
-          <img src="../assets/siemens.png" alt="siemens_logo" height="60" width="120">
-        <!-- <a class="navbar-brand" style="color:rgb(184, 147, 253)" href="#">Code.Siemens Dashboard</a> -->
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
-        
-      </nav>
-      
-      <!-- <div class="continer-fluid" >
-        <div class="row">
-            <div class="col-md-6 offset-md-3" >
-                <router-outlet> </router-outlet>
-            </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="../assets/siemens.png" alt="siemens_logo" height="60" width="120">
+  </nav>
+
+
+  <div class="row">
+    <div class="col-12">
+      <h1 style="text-align:center;">LOGIN</h1>
+      <form #frm="ngForm" (ngSubmit)="loginUser(frm)">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input class="form-control" style="text-align:left;" type="email" ngModel #useremail="ngModel" name="email"
+            required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
         </div>
-      </div> -->
-      
+        <div *ngIf="useremail.touched && useremail.invalid" class="alert alert-danger">
+          <div *ngIf="useremail.errors?.required">Email ID is required</div>
+          <div *ngIf="useremail.errors?.pattern">Email must be a valid email Address</div>
+        </div>
 
-    <div  class="row" >
-      <div class="col-12" >
-        <h1 style="text-align:center;">LOGIN</h1>
-        <form #frm="ngForm" (ngSubmit)="loginUser(frm)">
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input class="form-control" style="text-align:left;" type="email" ngModel #useremail="ngModel" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-          </div>
-          <div *ngIf="useremail.touched && useremail.invalid" class="alert alert-danger">
-            <div *ngIf="useremail.errors?.required">Email ID is required</div>
-            <div *ngIf="useremail.errors?.pattern">Email must be a valid email Address</div>
-          </div>
-       
-          <div class="form-group">
-             <label for="password">Password:</label>
-             <input class="form-control" style="text-align:left;" type="password" ngModel name="password" #pswd="ngModel" required pattern="^(?=.*\d).{4,8}$">
-           </div>
-           <div *ngIf="pswd.touched && pswd.invalid" class="alert alert-danger">
-             <div *ngIf="pswd.errors?.required">password is required</div>
-             <div *ngIf="pswd.errors?.pattern">Password must be atleast 4 character</div>
-           </div>
-           <button type="submit"  class="btn btn-success" name="button" [disabled]="frm.invalid">Login</button>
-        </form>
-      </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input class="form-control" style="text-align:left;" type="password" ngModel name="password" #pswd="ngModel"
+            required pattern="^(?=.*\d).{4,8}$">
+        </div>
+        <div *ngIf="pswd.touched && pswd.invalid" class="alert alert-danger">
+          <div *ngIf="pswd.errors?.required">password is required</div>
+          <div *ngIf="pswd.errors?.pattern">Password must be atleast 4 character</div>
+        </div>
+        <button type="submit" class="btn btn-success" name="button" [disabled]="frm.invalid">Login</button>
+      </form>
     </div>
- 
-
   </div>
- <!-- {{frm.value | json}} -->
+
+
+</div>

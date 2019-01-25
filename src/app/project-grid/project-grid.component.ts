@@ -9,6 +9,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./project-grid.component.css']
 })
 export class ProjectGridComponent implements OnInit {
+  move(){
+    this._router.navigate(['/projSpecs'])
+  }
 
   url='http://localhost:3000/projectDetails';
   status=[];
