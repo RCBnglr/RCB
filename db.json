@@ -75,43 +75,43 @@
   ],
   "projectDetails":[
     {
-      "name":"project1",
+      "name":"Project 1",
       "status":"ongoing",
       "duration":"1 month",
       "department":"Reuse"
     },
     {
-      "name":"project2",
+      "name":"Project 2",
       "status":"Completed",
       "duration":"5 month",
       "department":"Reuse"
     },
     {
-      "name":"project3",
+      "name":"Project 3",
       "status":"ongoing",
       "duration":"8 month",
       "department":"Reuse"
     },
     {
-      "name":"project4",
+      "name":"Project 4",
       "status":"Completed",
       "duration":"9 month",
       "department":"Reuse"
     },
     {
-      "name":"project5",
+      "name":"Project 5",
       "status":"ongoing",
       "duration":"14 month",
       "department":"Reuse"
     },
     {
-      "name":"project6",
+      "name":"Project 6",
       "status":"ongoing",
       "duration":"10 month",
       "department":"Reuse"
     },
     {
-      "name":"project7",
+      "name":"Project ",
       "status":"ongoing",
       "duration":"7 month",
       "department":"Reuse"

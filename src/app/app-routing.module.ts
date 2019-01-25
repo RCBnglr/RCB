@@ -5,6 +5,7 @@ import { UserhomeComponent } from './userhome/userhome.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { ProjSpecsComponent } from './proj-specs/proj-specs.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'login', pathMatch:'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:'userhome', component:UserhomeComponent},
   {path: 'pie-chart', component: PieChartComponent},
   {path:'line-chart', component:LineChartComponent},
-  {path:'bar-chart', component:BarChartComponent}
+  {path:'bar-chart', component:BarChartComponent},
+  {path:'projSpecs', component:ProjSpecsComponent}
    
 ];
 

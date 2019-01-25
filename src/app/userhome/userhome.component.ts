@@ -45,6 +45,10 @@ export class UserhomeComponent implements OnInit {
 
   constructor(private _router:Router,private http:HttpClient) { }
 
+  barChart(){
+    this._router.navigate(['/projSpecs']);
+  }
+
   ngOnInit() {
     this.http.get(this.url).subscribe((res)=>{
      this.res=res;

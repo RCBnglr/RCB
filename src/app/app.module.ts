@@ -12,6 +12,7 @@ import {UserService} from './user.service';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { ProjSpecsComponent } from './proj-specs/proj-specs.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
     PieChartComponent,
     LineChartComponent,
     BarChartComponent,
+    ProjSpecsComponent,
     
   ],
   imports: [
