@@ -1,0 +1,31 @@
+.gridChart
+    {
+    position:absolute; 
+    right:15px; 
+    top: 60px;
+    background-color:white; 
+    height:240px; 
+    width:250px;
+    }
+.gridText
+    {
+        position: absolute;
+        left: 15px;
+        top:55px; 
+    }
+
+mat-grid-list
+    {
+        max-width: 98%; 
+        margin:auto;
+        margin-top:5px;
+    }
+mat-grid-tile-header
+    {
+      text-align:center;
+    }
+mat-grid-tile 
+    {
+        background-color:	rgba(196, 203, 223, 0.959);
+         border-radius: 15px;
+    }

@@ -43,7 +43,7 @@
         
     </div>
 
-    <mat-paginator [length]="100" 
+    <!-- <mat-paginator [length]="100" 
       [pageSize]="10"
       [pageSizeOptions]="[5, 10, 25, 100]">
       </mat-paginator>  
@@ -52,9 +52,11 @@
         <mat-grid-tile *ngFor="let port of res" style="font-style: bold">
           <mat-grid-tile-header>{{port.name}}</mat-grid-tile-header>
           <div class="gridText">Status:{{port.status}}<br>Duration:{{port.duration}}<br>Department:{{port.department}}</div>
-          <div><app-pie-chart></app-pie-chart></div>
+          <div class="gridChart"><app-pie-chart></app-pie-chart></div>
         </mat-grid-tile>
-      </mat-grid-list> 
+      </mat-grid-list>  -->
+      <app-project-grid></app-project-grid>
+
     
       <div class="footer">
         <p>Code.Siemens.com</p>
