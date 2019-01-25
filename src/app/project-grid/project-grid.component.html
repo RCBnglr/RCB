@@ -1,0 +1,12 @@
+<mat-paginator [length]="100" 
+[pageSize]="10"
+[pageSizeOptions]="[5, 10, 25, 100]">
+</mat-paginator>  
+
+<mat-grid-list cols="3" rowHeight="4:3" > 
+  <mat-grid-tile *ngFor="let port of res" style="font-style: bold">
+    <mat-grid-tile-header>{{port.name}}</mat-grid-tile-header>
+    <div class="gridText">Status:{{port.status}}<br>Duration:{{port.duration}}<br>Department:{{port.department}}</div>
+    <div class="gridChart"><app-pie-chart></app-pie-chart></div>
+  </mat-grid-tile>
+</mat-grid-list> 

@@ -1,16 +1,14 @@
-
 import { Component, OnInit } from '@angular/core';
 
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import {Data} from '../data'
 
 @Component({
-  selector: 'app-userhome',
-  templateUrl: './userhome.component.html',
-  styleUrls: ['./userhome.component.css']
+  selector: 'app-project-grid',
+  templateUrl: './project-grid.component.html',
+  styleUrls: ['./project-grid.component.css']
 })
-export class UserhomeComponent implements OnInit {
+export class ProjectGridComponent implements OnInit {
 
   url='http://localhost:3000/projectDetails';
   status=[];
@@ -20,10 +18,6 @@ export class UserhomeComponent implements OnInit {
 
   constructor(private _router:Router,private http:HttpClient) { }
 
-  barChart(){
-    this._router.navigate(['/projSpecs']);
-  }
-
   ngOnInit() {
     this.http.get(this.url).subscribe((res)=>{
      this.res=res;
@@ -31,6 +25,4 @@ export class UserhomeComponent implements OnInit {
     );
 
   }
-  
 }
-

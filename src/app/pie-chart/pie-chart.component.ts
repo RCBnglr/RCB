@@ -36,19 +36,7 @@ export class PieChartComponent implements OnInit {
         rotation: .75 * Math.PI,
       circumference: 1.5 * Math.PI,
       cutoutPercentage:65,
-        // showLines: false,
-        // title:{
-        //   text:"Pie Chart",
-        //   display:false
-        // },
-        // scales: {
-          
-        //   yAxes:[{
-        //     ticks:{
-        //       beginAtZero:true
-        //     }
-        //   }]
-        // }
+        
       }
     })
   }

@@ -292,9 +292,10 @@
     background-color:	rgba(196, 203, 223, 0.959);
      border-radius: 15px;
   }
-  .gridText{
+  /* .gridText{
     position: absolute;
     left: 15px;
+<<<<<<< HEAD
     top:60px; 
   }
   .gridChart{
@@ -305,6 +306,10 @@
     height:240px;
     width:250px;
   }
+=======
+    top:55px; 
+  } */
+>>>>>>> 5e60f9a1f48a8e6aaf8ab8ead9298e55e5278d72
   
 mat-grid-list{
     max-width: 98%; 
@@ -326,3 +331,11 @@ mat-grid-tile-header{
       text-align: left;
       padding-left: 20px;
    }
+  /* .gridChart{
+position:absolute; 
+right:15px; 
+top: 60px;
+background-color:white; 
+height:240px; 
+width:250px;
+   } */
