@@ -18,7 +18,7 @@ export class ProjectGridComponent implements OnInit {
   name=[];
   tiles: any=[];
   res:any;
-  page=0; size=6;
+  page=0; size=4;
   constructor(private _router:Router,private http:HttpClient) { }
 
   ngOnInit() {

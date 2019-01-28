@@ -77,91 +77,91 @@
     {
       "name":"Project 1",
       "status":"ongoing",
-      "duration":"1 month",
+      "duration":"1",
       "department":"Reuse"
     },
     {
       "name":"Project 2",
       "status":"Completed",
-      "duration":"5 month",
+      "duration":"5",
       "department":"Reuse"
     },
     {
       "name":"Project 3",
       "status":"ongoing",
-      "duration":"8 month",
+      "duration":"8",
       "department":"Reuse"
     },
     {
       "name":"Project 4",
       "status":"Completed",
-      "duration":"9 month",
+      "duration":"9",
       "department":"Reuse"
     },
     {
       "name":"Project 5",
       "status":"ongoing",
-      "duration":"14 month",
+      "duration":"14",
       "department":"Reuse"
     },
     {
       "name":"Project 6",
       "status":"ongoing",
-      "duration":"10 month",
+      "duration":"10",
       "department":"Reuse"
     },
     {
-      "name":"Project ",
+      "name":"Project 7",
       "status":"ongoing",
-      "duration":"7 month",
+      "duration":"7",
       "department":"Reuse"
     },
     {
-      "name":"project8",
+      "name":"project 8",
       "status":"Completed",
-      "duration":"5 month",
+      "duration":"5",
       "department":"Reuse"
     },
     {
-      "name":"project9",
+      "name":"project 9",
       "status":"ongoing",
-      "duration":"4 month",
+      "duration":"4",
       "department":"Reuse"
     },
     {
-      "name":"project10",
+      "name":"project 10",
       "status":"ongoing",
-      "duration":"9 month",
+      "duration":"9",
       "department":"Reuse"
     },
     {
-      "name":"project11",
+      "name":"project 11",
       "status":"ongoing",
-      "duration":"6 month",
+      "duration":"6",
       "department":"Reuse"
     },
     {
-      "name":"project12",
+      "name":"project 12",
       "status":"Completed",
-      "duration":"1 month",
+      "duration":"1",
       "department":"Reuse"
     },
     {
-      "name":"project13",
+      "name":"project 13",
       "status":"ongoing",
-      "duration":"3 month",
+      "duration":"3",
       "department":"Reuse"
     },
     {
-      "name":"project14",
+      "name":"project 14",
       "status":"ongoing",
-      "duration":"16 month",
+      "duration":"16",
       "department":"Reuse"
     },
     {
-      "name":"project15",
+      "name":"project 15",
       "status":"completed",
-      "duration":"6 month",
+      "duration":"6",
       "department":"Reuse"
     }
   ]
