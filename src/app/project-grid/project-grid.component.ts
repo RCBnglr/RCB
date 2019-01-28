@@ -16,16 +16,27 @@ export class ProjectGridComponent implements OnInit {
   url='http://localhost:3000/projectDetails';
   status=[];
   name=[];
-  //portfolio=[];
+  tiles: any=[];
   res:any;
-
+  page=0; size=6;
   constructor(private _router:Router,private http:HttpClient) { }
 
   ngOnInit() {
     this.http.get(this.url).subscribe((res)=>{
-     this.res=res;
+      this.res=res;
+      this.getData({ pageIndex: this.page, pageSize: this.size });
     }
     );
+    
+  }
+  getData(obj: any) {
+    let index = 0,
+      startingIndex = obj.pageIndex * obj.pageSize,
+      endingIndex = startingIndex + obj.pageSize;
 
+    this.tiles = this.res.filter(() => {
+      index++;
+      return (index > startingIndex && index <= endingIndex) ? true : false;
+    });
   }
 }

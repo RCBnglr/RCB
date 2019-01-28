@@ -16,6 +16,9 @@ import { ProjSpecsComponent } from './proj-specs/proj-specs.component';
 import { ProjectGridComponent } from './project-grid/project-grid.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProjSpecsGridComponent } from './proj-specs-grid/proj-specs-grid.component';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,7 @@ import { FooterComponent } from './footer/footer.component';
     ProjectGridComponent,
     NavComponent,
     FooterComponent,
+    ProjSpecsGridComponent,
     
   ],
   imports: [
@@ -38,7 +42,9 @@ import { FooterComponent } from './footer/footer.component';
     ReactiveFormsModule,
     HttpClientModule,
     MatPaginatorModule,
-    MatGridListModule
+    MatGridListModule,
+    MatChipsModule,
+    MatButtonToggleModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

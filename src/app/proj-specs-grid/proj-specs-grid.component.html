@@ -1,0 +1,15 @@
+<mat-button-toggle-group #group="matButtonToggleGroup">
+    <mat-button-toggle id="proj">Project</mat-button-toggle>
+    <mat-button-toggle>Takt1</mat-button-toggle>
+    <mat-button-toggle>Takt2</mat-button-toggle>
+    <mat-button-toggle>Takt3</mat-button-toggle>
+    <mat-button-toggle>Takt4</mat-button-toggle>
+  </mat-button-toggle-group>
+
+
+<mat-grid-list id="grid2" cols="4" rowHeight="160px">
+  <mat-grid-tile id="tile2" *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows">
+    <div>{{tile.text}}</div>
+  </mat-grid-tile>
+</mat-grid-list>
+
