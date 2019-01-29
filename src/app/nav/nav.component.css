@@ -137,6 +137,7 @@
     padding: 0px;
     overflow: hidden;
     background-color:  #585858c7;
+    height: 100px;
   }
   .topnav3 a {
     float: left;
@@ -168,4 +169,8 @@
   background-color:	rgba(1, 18, 65, 0.945);
   border:none;
   border-left:6 px solid white;
+  
+}
+.topnav3 button:hover{
+  background-color:rgba(29, 55, 126, 0.959);
 }

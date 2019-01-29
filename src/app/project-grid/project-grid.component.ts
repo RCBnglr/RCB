@@ -27,7 +27,6 @@ export class ProjectGridComponent implements OnInit {
       this.getData({ pageIndex: this.page, pageSize: this.size });
     }
     );
-    
   }
   getData(obj: any) {
     let index = 0,
