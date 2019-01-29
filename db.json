@@ -78,91 +78,106 @@
       "name":"Project 1",
       "status":"ongoing",
       "duration":"1",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"3"
     },
     {
       "name":"Project 2",
       "status":"Completed",
       "duration":"5",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"4"
     },
     {
       "name":"Project 3",
       "status":"ongoing",
       "duration":"8",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"2"
     },
     {
       "name":"Project 4",
       "status":"Completed",
       "duration":"9",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"1"
     },
     {
       "name":"Project 5",
       "status":"ongoing",
       "duration":"14",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"5"
     },
     {
       "name":"Project 6",
       "status":"ongoing",
       "duration":"10",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"4"
     },
     {
       "name":"Project 7",
       "status":"ongoing",
       "duration":"7",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"3"
     },
     {
       "name":"project 8",
       "status":"Completed",
       "duration":"5",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"3"
     },
     {
       "name":"project 9",
       "status":"ongoing",
       "duration":"4",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"5"
     },
     {
       "name":"project 10",
       "status":"ongoing",
       "duration":"9",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"2"
     },
     {
       "name":"project 11",
       "status":"ongoing",
       "duration":"6",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"1"
     },
     {
       "name":"project 12",
       "status":"Completed",
       "duration":"1",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"3"
     },
     {
       "name":"project 13",
       "status":"ongoing",
       "duration":"3",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"4"
     },
     {
       "name":"project 14",
       "status":"ongoing",
       "duration":"16",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"5"
     },
     {
       "name":"project 15",
       "status":"completed",
       "duration":"6",
-      "department":"Reuse"
+      "department":"Reuse",
+      "rating":"2"
     }
   ]
 }

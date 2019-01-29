@@ -19,6 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ProjSpecsGridComponent } from './proj-specs-grid/proj-specs-grid.component';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     MatGridListModule,
     MatChipsModule,
     MatButtonToggleModule,
+    MatMenuModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
