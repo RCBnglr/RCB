@@ -1,0 +1,16 @@
+<mat-paginator [length]="portfolio.length" [pageSize]="size" [pageIndex]="page" [pageSizeOptions]="[2, 4, 6, 8, 12]"
+  (page)="getData($event)">
+</mat-paginator>
+
+
+<mat-grid-list cols="2" rowHeight="7:4">
+  <mat-grid-tile *ngFor="let port of data" style="font-style: bold">
+    <mat-grid-tile-header [style.background-color]="'pink'">
+      Project {{port.name}}
+      <a *ngFor="let item of port.myList; let i=index " (click)="setStarTable(port,i)">
+        <i class="fa" [ngClass]="{'fa-star-o':item,'fa-star':!item}"></i>
+      </a>
+    </mat-grid-tile-header>
+    <div class="gridText">{{port.status}}</div>
+  </mat-grid-tile>
+</mat-grid-list>

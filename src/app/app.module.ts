@@ -20,6 +20,7 @@ import { ProjSpecsGridComponent } from './proj-specs-grid/proj-specs-grid.compon
 import {MatChipsModule} from '@angular/material/chips';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatMenuModule} from '@angular/material/menu';
+import { TrialComponent } from './trial/trial.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import {MatMenuModule} from '@angular/material/menu';
     NavComponent,
     FooterComponent,
     ProjSpecsGridComponent,
+    TrialComponent,
     
   ],
   imports: [
