@@ -79,34 +79,71 @@
       "status":"ongoing",
       "duration":"1",
       "department":"Reuse",
-      "rating":"3"
+      "myList": [true, true, true, true, true],
+      "rating":"3",
+      "rateparameters":[
+        {
+        "CQI": 75,
+        "mat_model":63,
+        "trend":"true",
+        "defects":4,
+        "b_pipeline": "true"
+      }]
     },
     {
       "name":"Project 2",
       "status":"Completed",
       "duration":"5",
       "department":"Reuse",
-      "rating":"4"
+      "myList": [true, true, true, true, true],
+      "rating":"4",
+      "rateparameters":[
+        {
+        "CQI": 45,
+        "mat_model":62,
+        "trend":"true",
+        "defects":14,
+        "b_pipeline": "true"
+      }]
     },
     {
       "name":"Project 3",
       "status":"ongoing",
       "duration":"8",
       "department":"Reuse",
-      "rating":"2"
+      "myList": [true, true, true, true, true],
+      "rating":"2",
+      "rateparameters":[
+        {
+        "CQI": 15,
+        "mat_model":46,
+        "trend":"true",
+        "defects":1,
+        "b_pipeline": "false"
+      }]
     },
     {
       "name":"Project 4",
       "status":"Completed",
       "duration":"9",
       "department":"Reuse",
-      "rating":"1"
+      "myList": [true, true, true, true, true],
+      "rating":"1",
+      "rateparameters":[
+        {
+        "CQI": 32,
+        "mat_model":45,
+        "trend":"false",
+        "defects":14,
+        "b_pipeline": "true"
+      }]
     },
     {
       "name":"Project 5",
       "status":"ongoing",
       "duration":"14",
       "department":"Reuse",
+      "myList": [true, true, true, true, true],
       "rating":"5"
     },
     {
@@ -114,6 +151,7 @@
       "status":"ongoing",
       "duration":"10",
       "department":"Reuse",
+      "myList": [true, true, true, true, true],
       "rating":"4"
     },
     {
@@ -121,6 +159,7 @@
       "status":"ongoing",
       "duration":"7",
       "department":"Reuse",
+      "myList": [true, true, true, true, true],
       "rating":"3"
     },
     {
@@ -128,6 +167,7 @@
       "status":"Completed",
       "duration":"5",
       "department":"Reuse",
+      "myList": [true, true, true, true, true],
       "rating":"3"
     },
     {
@@ -135,6 +175,7 @@
       "status":"ongoing",
       "duration":"4",
       "department":"Reuse",
+      "myList": [true, true, true, true, true],
       "rating":"5"
     },
     {
@@ -142,6 +183,7 @@
       "status":"ongoing",
       "duration":"9",
       "department":"Reuse",
+      "myList": [true, true, true, true, true],
       "rating":"2"
     },
     {
@@ -149,6 +191,7 @@
       "status":"ongoing",
       "duration":"6",
       "department":"Reuse",
+      "myList": [true, true, true, true, true],
       "rating":"1"
     },
     {
@@ -156,6 +199,7 @@
       "status":"Completed",
       "duration":"1",
       "department":"Reuse",
+      "myList": [true, true, true, true, true],
       "rating":"3"
     },
     {
@@ -163,6 +207,7 @@
       "status":"ongoing",
       "duration":"3",
       "department":"Reuse",
+      "myList": [true, true, true, true, true],
       "rating":"4"
     },
     {
@@ -170,6 +215,7 @@
       "status":"ongoing",
       "duration":"16",
       "department":"Reuse",
+      "myList": [true, true, true, true, true],
       "rating":"5"
     },
     {
@@ -177,6 +223,7 @@
       "status":"completed",
       "duration":"6",
       "department":"Reuse",
+      "myList": [true, true, true, true, true],
       "rating":"2"
     }
   ]

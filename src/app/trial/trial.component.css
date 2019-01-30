@@ -1,0 +1,18 @@
+mat-grid-tile {
+    background-color:	rgba(196, 203, 223, 0.959);
+     border-radius: 15px;
+  }
+  .gridText{
+    position: absolute;
+    left: 15px;
+    top:55px; 
+  }
+mat-grid-list{
+    max-width: 98%; 
+    margin:auto;
+    margin-top:5px;
+}
+.star{
+  position: absolute;
+  right: 60px;
+}

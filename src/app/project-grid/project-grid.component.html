@@ -6,9 +6,13 @@
 </mat-paginator>  
 
 <mat-grid-list cols="2" rowHeight="6:3" gutterSize="5px" > 
-  <mat-grid-tile *ngFor="let port of tiles" (click)="move()">
-    <mat-grid-tile-header [style.background-color]="'blue'">{{port.name}}</mat-grid-tile-header>
-    <div class="gridText">Status:{{port.status}}<br>Duration:{{port.duration}}<br>Department:{{port.department}}</div>
+  <mat-grid-tile *ngFor="let val of tiles" (click)="move()">
+    <mat-grid-tile-header [style.background-color]="'rgba(1, 18, 65, 0.945)'">{{val.name}}
+      <a  *ngFor="let item of val.myList" (click)="setStarTable(val)">
+        <i class="fa" [ngClass]="{'fa-star-o':item,'fa-star':!item}"></i>
+      </a>
+    </mat-grid-tile-header>
+    <div class="gridText">Status:{{val.status}}<br>Duration:{{val.duration}}<br>Department:{{val.department}}</div>
     <!-- <div class="gridChart"><app-pie-chart></app-pie-chart></div> -->
   </mat-grid-tile>
 </mat-grid-list> 

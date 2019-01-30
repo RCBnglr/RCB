@@ -16,8 +16,7 @@ const routes: Routes = [
   {path:'line-chart', component:LineChartComponent},
   {path:'bar-chart', component:BarChartComponent},
   {path:'projSpecs', component:ProjSpecsComponent},
-  {path:'grid', component:ProjectGridComponent}
-   
+  {path:'grid', component:ProjectGridComponent}   
 ];
 
 @NgModule({
