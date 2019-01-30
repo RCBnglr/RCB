@@ -21,3 +21,9 @@
 
 <input type="text" (keyup)="onName($event)">
 <button (click)="get()">Get Details</button>
+<div *ngIf="found">
+  <span>{{name}}: {{details}}</span>
+</div>
+
+
+<!-- <span *ngFor="let item of details">{{item.status}}</span> -->

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { fdatasync } from 'fs';
 
 @Component({
   selector: 'app-trial',
@@ -8,20 +9,25 @@ import { Router } from '@angular/router';
   styleUrls: ['./trial.component.css']
 })
 export class TrialComponent implements OnInit {
-  
+  details:any=[];
+  data:any;
+  found:boolean;
   ngOnInit(){}
 name:string='';
   constructor(private _router: Router, private httpClient:HttpClient){}
   onName(event:any){
     this.name=event.target.value;
+    this.found=false;
   }
   get(){
-    this.httpClient.get('http://localhost:3000/projectDetails?q=this.name')
+    this.httpClient.get(`http://localhost:3000/projectDetails?q=${this.name}`)
     .subscribe(
-      (data)=>{console.log(data);}
-    ) 
+      (data)=>{
+        this.data=data;
+          this.found=true;
+        }); }
+
   
-  }
   
   // data: any = [];
   // public portfolio = [
