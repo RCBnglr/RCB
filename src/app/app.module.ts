@@ -21,6 +21,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatMenuModule} from '@angular/material/menu';
 import { TrialComponent } from './trial/trial.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { TrialComponent } from './trial/trial.component';
     MatChipsModule,
     MatButtonToggleModule,
     MatMenuModule,
+    MatToolbarModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

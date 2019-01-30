@@ -1,4 +1,4 @@
-<mat-paginator [length]="portfolio.length" [pageSize]="size" [pageIndex]="page" [pageSizeOptions]="[2, 4, 6, 8, 12]"
+<!-- <mat-paginator [length]="portfolio.length" [pageSize]="size" [pageIndex]="page" [pageSizeOptions]="[2, 4, 6, 8, 12]"
   (page)="getData($event)">
 </mat-paginator>
 
@@ -7,13 +7,17 @@
   <mat-grid-tile *ngFor="let val of data" style="font-style: bold">
     <mat-grid-tile-header  [style.background-color]="'rgba(1, 18, 65, 0.945)'">
       Project {{val.name}}
-      <a *ngFor="let item of val.myList" (click)="setStarTable(val)">
+      <a *ngFor="let item of val.myList; " (click)="setStarTable(val)">
         <i class="fa" [ngClass]="{'fa-star-o':item,'fa-star':!item}"></i>
       </a>
     </mat-grid-tile-header>
     <div class="gridText">{{val.status}}</div>
   </mat-grid-tile>
-</mat-grid-list>
+</mat-grid-list> -->
 
 
 <!-- (click)="setStarTable(val)" -->
+<!-- ______________________________________________________________ -->
+
+<input type="text" (keyup)="onName($event)">
+<button (click)="get()">Get Details</button>

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
@@ -41,7 +40,7 @@ export class ProjectGridComponent implements OnInit {
       return (index > startingIndex && index <= endingIndex) ? true : false;
     });
   }
-  
+
   //STAR RATING
   setStarTable(record: any, d: any) {
     this.rating = d + 1;
